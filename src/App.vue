@@ -3,8 +3,8 @@
     <v-app-bar color="primary" app dark>
       <v-toolbar-title>Vuetify Dashboard</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn>Home</v-btn>
-      <v-btn>Login</v-btn>
+      <v-btn text rounded>Home</v-btn>
+      <v-btn text rounded>Login</v-btn>
     </v-app-bar>
     <v-content>
       <v-card width="400" class="mx-auto mt-5">
@@ -44,7 +44,7 @@
           {{ link }}
         </v-btn>
         <v-col class="primary lighten-2 py-4 text-center white--text" cols="12">
-          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+          {{ new Date().getFullYear() }} — <strong>Vuetify Dashboard</strong>
         </v-col>
       </v-row>
     </v-footer>
@@ -59,6 +59,7 @@ export default {
 
   data: () => ({
     showPassword: false,
+    links: ["Home", "Login"],
   }),
 };
 </script>
